@@ -11,7 +11,7 @@ apt-get install -y docker.io
 apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 
 #The configuration of the master node
-kubeadm init
+kubeadm init --config file.yaml --token 5678
 
 # start the Cluster
 sudo cp /etc/kubernetes/admin.conf $HOME/
