@@ -2,6 +2,7 @@
 
 #Installation der Benötigten packages:
 wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/file.yaml
+chmod +x file.yaml 
 apt-get update && apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 cat < /etc/apt/sources.list.d/kubernetes.list
