@@ -1,12 +1,13 @@
 #!/bin/bash
-
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-worker-rc.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-web-svc.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-web-rc.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-secrets.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-svc.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-secrets.yaml
-git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-rc.yaml
+mkdir concourse
+cd ./concourse/
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-worker-rc.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-web-svc.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-web-rc.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-secrets.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-svc.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-secrets.yaml
+wget https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-postgresql-rc.yaml
 
 
 
