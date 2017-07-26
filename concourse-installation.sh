@@ -1,4 +1,4 @@
-#!/bin/ba
+#!/bin/bash
 
 git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-worker-rc.yaml
 git clone https://raw.githubusercontent.com/apfeifer00/Kubernetes/master/concourse-kubernetes/concourse-web-svc.yaml
