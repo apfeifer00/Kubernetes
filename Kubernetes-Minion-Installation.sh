@@ -17,7 +17,7 @@ apt-get update
 apt-get install -y kubelet kubeadm
 
 # Beitritt ins Cluster
-kubeadm join --token $TOKEN $MASTER_IP_ADRESSE:$MASTER_PORT --skip-preflight-checks
+#kubeadm join --token $TOKEN $MASTER_IP_ADRESSE:$MASTER_PORT --skip-preflight-checks
 
 # Not ready bug fix 
 sed -i "s|ExecStart=/usr/bin/kubelet.*$|ExecStart=/usr/bin/kubelet \$KUBELET_KUBECONFIG_ARGS \$KUBELET_SYSTEM_PODS_ARGS \$KUBELET_DNS_ARGS \$KUBELET_AUTHZ_ARGS \$KUBELET_CAD$|g" /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
