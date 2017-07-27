@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 kubectl delete -f concourse-worker-rc.yaml 
 kubectl delete -f concourse-web-svc.yaml 
