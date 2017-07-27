@@ -1,9 +1,0 @@
-#!/bin/bash
-
-kubectl delete -f concourse-worker-rc.yaml 
-kubectl delete -f concourse-web-svc.yaml 
-kubectl delete -f concourse-web-rc.yaml 
-kubectl delete -f concourse-secrets.yaml 
-kubectl delete -f concourse-postgresql-svc.yaml 
-kubectl delete -f concourse-postgresql-secrets.yaml 
-kubectl delete -f concourse-postgresql-rc.yaml 
