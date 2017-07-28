@@ -13,7 +13,7 @@ apt-get install -y kubelet kubeadm
 
 
 #The configuration of the master node
-kubeadm init 
+ kubeadm init --token string $token
 
 
 # start the Cluster
