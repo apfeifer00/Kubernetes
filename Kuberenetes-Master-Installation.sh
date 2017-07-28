@@ -11,7 +11,8 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm
 
-
+echo "Output for debugging:
+token=$token"
 #The configuration of the master node
  kubeadm init --token string $token
 
