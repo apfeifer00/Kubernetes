@@ -9,7 +9,9 @@ EOF
 apt-get update
 
 # 1.5.6 does exist in the repo but it has a hard depenedency on a newer kubernetes-cni.  Use 1.5.3 instead.
-sudo apt-get -y install kubectl=1.5.3-00 kubelet=1.5.3-00 kubernetes-cni=0.3.0.1-07a8a2-00
+# sudo apt-get -y install kubectl=1.5.3-00 kubelet=1.5.3-00 kubernetes-cni=0.3.0.1-07a8a2-00
+#oder
+sudo apt-get -y install kubectl=1.5.1-00 kubelet=1.5.1-00 kubernetes-cni=0.3.0.1-07a8a2-00
 
 # Versioning strangeness for how we packaged kubeadm pre-1.6 means that the version number
 # says 1.6.0-alpha even though it is the 1.5 version of kubeadm.  Because of how this sorts,
@@ -20,3 +22,6 @@ sudo apt-get install -f
 
 # Hold these packages back so that we don't accidentally upgrade them.
 sudo apt-mark hold kubeadm kubectl kubelet kubernetes-cni
+
+#Master
+# kubeadm init --use-kubernetes-version=v1.5.6
