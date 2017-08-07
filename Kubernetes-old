@@ -25,3 +25,4 @@ sudo apt-mark hold kubeadm kubectl kubelet kubernetes-cni
 
 #Master
 # kubeadm init --use-kubernetes-version=v1.5.6
+# kubectl apply -f https://git.io/weave-kube
